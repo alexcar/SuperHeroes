@@ -1,4 +1,12 @@
 <mat-toolbar color="primary">Superheroes</mat-toolbar>
 <mat-card>Hello Material Design World</mat-card>
 
+<app-superheroes-profile
+  [name]="heroName"
+  [firstAppearance]="year"
+  [livesIn]="city"
+  validaIdade="2008"
+  (flyWithSuperhero)="printSuperhero($event)"
+  ></app-superheroes-profile>
+
 <router-outlet></router-outlet>
